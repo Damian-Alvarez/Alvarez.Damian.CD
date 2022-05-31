@@ -1,0 +1,77 @@
+*  {
+    margin: 0;
+    font-family: italic, serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: orange;
+    width: 100vw;
+    padding: 100px;
+    margin: 0;
+    text-align: center;
+    position: sticky;
+    grid-area: HeaderNav;
+    top: 0;
+}
+
+h2,p {
+    color: #d3d3d3;
+}
+
+.paginas {
+    background-color: orangered;
+    color: black;
+    width: 50px;
+    height: 15px;
+    margin-right: 20px;
+    padding: 2px 19px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-style: italic;
+}
+
+.display {
+    display: inline-block;
+}
+
+ul {
+    list-style-type: none;
+  }
+
+  footer {
+    background-color: #000;
+    width: 100vw;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    position: fixed;
+    grid-area: pieRedes;
+    bottom: 0;
+}
+
+ main{ 
+    background-color: orange;
+    width: 100vw;
+    padding: 50px;
+    text-align: left;
+   
+}
+
+#gridArea{
+    display: grid;
+    grid-template-areas: 
+        "HeaderNav"
+        "informacion"
+        "pieRedes"
+    ;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 2fr 1fr;
+    row-gap: 1%;
+}
+
+#informacion{
+    grid-area: informacion;
+}
